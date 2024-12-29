@@ -11,7 +11,7 @@ function App() {
       <div className="absolute inset-0 bg-[url('/src/assets/bgimg.jpg')] bg-cover bg-center"></div>
 
       {/* Glass Effect Overlay */}
-      <div className="absolute inset-0 bg-gray-900 bg-opacity-25 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-gray-900 bg-opacity-30 backdrop-blur-sm"></div>
 
       {/* Main Content Container */}
       <div className="relative z-10 flex h-full w-full">

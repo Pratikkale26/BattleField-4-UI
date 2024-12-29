@@ -1,7 +1,7 @@
-// ServerInfo.tsx
+
 import React, { useEffect, useState } from "react";
 import { fetchServerInfo, ServerInfoData } from "../services/Api";
-import SettingBtn from "./SettingBtn"
+import SettingBtn from "./SettingBtn";
 
 const ServerInfo: React.FC = () => {
   const [data, setData] = useState<ServerInfoData | null>(null);
@@ -18,12 +18,12 @@ const ServerInfo: React.FC = () => {
     getData();
   }, []);
 
-  if (!data) return <p>Loading...</p>;
+  if (!data) return <p className="text-center text-lg text-gray-400">Loading...</p>;
 
   return (
-    <div className=" text-white ml-20">
+    <div className="text-white ml-4 sm:ml-8 md:ml-20">
       {/* Players/Ping/Tickrate Section */}
-      <div className="p-4 flex gap-20">
+      <div className="p-4 flex flex-col sm:flex-row sm:gap-8">
         <div>
           <h3 className="text-lg font-semibold mb-1">Players</h3>
           <p className="text-xl font-bold">
@@ -41,7 +41,7 @@ const ServerInfo: React.FC = () => {
       </div>
   
       {/* Settings, Advanced, and Rules in Three Columns */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mr-96 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
         {/* Settings Section */}
         <div className="p-4 rounded-lg shadow-lg">
           <h3 className="text-lg font-semibold mb-2">Settings</h3>
@@ -53,7 +53,7 @@ const ServerInfo: React.FC = () => {
         </div>
   
         {/* Advanced Section */}
-        <div className="p-4 rounded-lg shadow-lg ">
+        <div className="p-4 rounded-lg shadow-lg">
           <h3 className="text-lg font-semibold mb-2">Advanced</h3>
           <div className="gap-2">
             {Object.entries(data.advanced).map(([key, value]) => (
@@ -65,7 +65,7 @@ const ServerInfo: React.FC = () => {
         {/* Rules Section */}
         <div className="p-4 rounded-lg shadow-lg">
           <h3 className="text-lg font-semibold mb-2">Rules</h3>
-          <div className=" gap-2">
+          <div className="gap-2">
             {Object.entries(data.rules).map(([key, value]) => (
               <SettingBtn key={key} label={key} value={value} />
             ))}
@@ -74,7 +74,6 @@ const ServerInfo: React.FC = () => {
       </div>
     </div>
   );
-  
 };
 
 export default ServerInfo;

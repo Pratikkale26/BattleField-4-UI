@@ -25,8 +25,8 @@ const MapSection: React.FC = () => {
   return (
     <div className="p-4">
       <h2 className="text-xl mb-4 ml-20">MAP ROTATION</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 sm:px-8 md:px-12">
-      {mapData.map((map, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 ml-20"> {/* Responsive grid */}
+        {mapData.map((map, index) => (
           <Map key={index} {...map} /> // Spread map data as props
         ))}
       </div>
