@@ -13,6 +13,16 @@ const ServerInfo: React.FC = () => {
         setData(serverData);
       } catch (error) {
         console.error("Error fetching server info:", error);
+        // If the fetch fails, fallback to hardcoded data
+        const hardcodedData: ServerInfoData = {
+          players: { current: 5, max: 10 },
+          ping: 20,
+          tickrate: "60",
+          settings: { mode: "normal", map: "dust2", region: "Europe - DE", preset: "normal", password: "OFF" },
+          advanced: { difficulty: 2, teamBalance: 1, friendlyFire: 0, Spotting: 1, minimapSpotting: 1, vehicles: 1, minimap: 1 },
+          rules: { friendlyFire: 0, teamBalance: 1, Spotting: 1, minimapSpotting: 1 },
+        };
+        setData(hardcodedData);
       }
     };
     getData();

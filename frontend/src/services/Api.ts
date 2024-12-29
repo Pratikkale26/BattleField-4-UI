@@ -14,5 +14,5 @@ export interface ServerInfoData {
 // Fetch server info
 export const fetchServerInfo = async (): Promise<ServerInfoData> => {
   const response = await axios.get<ServerInfoData>(`${API_URL}/server-info`);
-  return response.data;
+  return response.data; 
 };

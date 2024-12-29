@@ -4,6 +4,7 @@ import Header from './components/Header';
 import MapSection from './components/MapSection';
 import ServerInfo from './components/ServerInfo';
 
+
 function App() {
   return (
     <div className="relative h-screen w-screen">
