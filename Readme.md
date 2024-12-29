@@ -6,10 +6,10 @@ This project is a **full-stack web application** that integrates a **React front
 ---
 
 ## Preview
-[![App Preview](./Preview1.png)](https://your-deployment-link.vercel.app)
-[![App Preview](./Preview2.png)](https://your-deployment-link.vercel.app)
+[![App Preview](./Preview1.png)](https://fog4.kalehub.com)
+[![App Preview](./Preview2.png)](https://fog4.kalehub.com)
 
-**(Live)**: [Full-Stack Web App](Todo- Link add) - click on image or this link to view the app.
+**(Live)**: [Full-Stack Web App](https://fog4.kalehub.com) - click on image or this link to view the app.
 
 ## Features
 - **Responsive Design**: The app is fully responsive, ensuring a seamless experience across devices.

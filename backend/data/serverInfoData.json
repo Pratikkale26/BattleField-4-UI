@@ -14,17 +14,13 @@
   },
   "advanced": {
     "minimap": "ON",
-    "onlySquadLeaderSpawn": "OFF",
     "vehicles": "ON",
     "teamBalance": "ON",
-    "3DSpotting": "ON",
     "minimapSpotting": "ON",
     "kickAfterIdle": 300,
     "banAfterKicks": 3,
     "regenerativeHealth": "ON",
-    "killCam": "ON",
-    "friendlyFire": "OFF",
-    "enemyNameTags": "ON"
+    "friendlyFire": "OFF"
   },
   "rules": {
     "tickets": 400,
